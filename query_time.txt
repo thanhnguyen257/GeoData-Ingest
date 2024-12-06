@@ -1,0 +1,105 @@
+Dataset: /mnt/mycephfs/demo/json_without_partition/TEMP
+Query string: SELECT COUNT(*) FROM data WHERE data_type='CLMMINT'
+Query hit: 358753 / 1076500
+Load time: 8.6696 s, Query time: 2.2996 s
+Load time: 1.1204 s, Query time: 0.7161 s
+Load time: 0.8540 s, Query time: 0.6701 s
+Load time: 0.8186 s, Query time: 0.5370 s
+Load time: 0.8597 s, Query time: 0.6828 s
+Load time: 0.8600 s, Query time: 0.7656 s
+
+Dataset: /mnt/mycephfs/demo/parquet_without_partition/TEMP
+Query string: SELECT COUNT(*) FROM data WHERE data_type='CLMMINT'
+Query hit: 358753 / 1076500
+Load time: 4.8372 s, Query time: 4.9601 s
+Load time: 0.2625 s, Query time: 0.5908 s
+Load time: 0.1950 s, Query time: 0.5715 s
+Load time: 0.1666 s, Query time: 0.3584 s
+Load time: 0.1289 s, Query time: 0.3233 s
+Load time: 0.1226 s, Query time: 0.3402 s
+
+------------------------------------------------------------------------------------------------------------
+
+Dataset: /mnt/mycephfs/demo/json_without_partition/HHOT
+Query string: SELECT COUNT(*) FROM data WHERE MM='03'
+Query hit: 1302 / 15344
+Load time: 7.8800 s, Query time: 1.7360 s
+Load time: 0.5772 s, Query time: 0.5503 s
+Load time: 0.3880 s, Query time: 0.3020 s
+Load time: 0.5281 s, Query time: 0.2556 s
+Load time: 0.3115 s, Query time: 0.2457 s
+Load time: 0.2805 s, Query time: 0.3069 s
+
+Dataset: /mnt/mycephfs/demo/parquet_without_partition/HHOT
+Query string: SELECT COUNT(*) FROM data WHERE MM='03'
+Query hit: 1302 / 15344
+Load time: 4.8136 s, Query time: 4.8475 s
+Load time: 0.1998 s, Query time: 0.4025 s
+Load time: 0.1482 s, Query time: 0.3627 s
+Load time: 0.2505 s, Query time: 0.4666 s
+Load time: 0.1247 s, Query time: 0.3243 s
+Load time: 0.1509 s, Query time: 0.3578 s
+
+------------------------------------------------------------------------------------------------------------
+
+Dataset: /mnt/mycephfs/demo/parquet_with_partition/TEMP
+Query string: SELECT COUNT(*) FROM data WHERE station='CCH' AND data_type='CLMMINT'
+Query hit: 11902 / 1076500
+Load time: 5.6940 s, Query time: 3.8353 s
+Load time: 0.3629 s, Query time: 0.4349 s
+Load time: 0.3812 s, Query time: 0.3972 s
+Load time: 0.3275 s, Query time: 0.2618 s
+Load time: 0.2545 s, Query time: 0.2616 s
+Load time: 0.2395 s, Query time: 0.2033 s
+
+Dataset: /mnt/mycephfs/demo/parquet_without_partition/TEMP
+Query string: SELECT COUNT(*) FROM data WHERE station='CCH' AND data_type='CLMMINT'
+Query hit: 11902 / 1076500
+Load time: 4.8021 s, Query time: 4.8252 s
+Load time: 0.1669 s, Query time: 0.6452 s
+Load time: 0.1751 s, Query time: 0.4186 s
+Load time: 0.1675 s, Query time: 0.3838 s
+Load time: 0.1323 s, Query time: 0.5701 s
+Load time: 0.1192 s, Query time: 0.4981 s
+
+Dataset: /mnt/mycephfs/demo/json_without_partition/TEMP
+Query string: SELECT COUNT(*) FROM data WHERE station='CCH' AND data_type='CLMMINT'
+Query hit: 11902 / 1076500
+Load time: 8.5371 s, Query time: 2.2997 s
+Load time: 1.0584 s, Query time: 0.8016 s
+Load time: 0.8657 s, Query time: 0.6802 s
+Load time: 0.8298 s, Query time: 0.5907 s
+Load time: 0.7431 s, Query time: 0.5849 s
+Load time: 0.8360 s, Query time: 0.5578 s
+
+------------------------------------------------------------------------------------------------------------
+
+Dataset: /mnt/mycephfs/demo/parquet_with_partition/HHOT
+Query string: SELECT COUNT(*) FROM data WHERE station='CCH' AND MM='03'
+Query hit: 93 / 15344
+Load time: 4.7962 s, Query time: 4.3536 s
+Load time: 0.1988 s, Query time: 2.6342 s
+Load time: 0.1569 s, Query time: 0.4700 s
+Load time: 0.1429 s, Query time: 0.2784 s
+Load time: 0.1740 s, Query time: 0.2282 s
+Load time: 0.1600 s, Query time: 0.2877 s
+
+Dataset: /mnt/mycephfs/demo/parquet_without_partition/HHOT
+Query string: SELECT COUNT(*) FROM data WHERE station='CCH' AND MM='03'
+Query hit: 93 / 15344
+Load time: 4.7766 s, Query time: 4.8364 s
+Load time: 0.1905 s, Query time: 0.7897 s
+Load time: 0.1915 s, Query time: 0.4635 s
+Load time: 0.1733 s, Query time: 0.3484 s
+Load time: 0.1518 s, Query time: 0.3444 s
+Load time: 0.1268 s, Query time: 0.2997 s
+
+Dataset: /mnt/mycephfs/demo/format_json_without_partition/HHOT
+Query string: SELECT COUNT(*) FROM data WHERE station='CCH' AND MM='03'
+Query hit: 93 / 15344
+Load time: 7.5735 s, Query time: 1.7630 s
+Load time: 0.5893 s, Query time: 0.5293 s
+Load time: 0.3612 s, Query time: 0.3081 s
+Load time: 0.4471 s, Query time: 0.2959 s
+Load time: 0.3204 s, Query time: 0.2573 s
+Load time: 0.2839 s, Query time: 0.2120 s
